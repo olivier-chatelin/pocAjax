@@ -170,7 +170,6 @@ h1{
     position: absolute;
     top: 0;
     left: 0;
-    /* opacity: 0.7; */
 }
 #characList1 .charac:nth-child(1){
     background-image: url(sources/images/Akuma_sm_col.jpg);

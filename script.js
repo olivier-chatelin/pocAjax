@@ -3,17 +3,29 @@ $(function () {
     var newIndex = 0
     var index = 0;
     chargePortrait(0);
+    chargeCouleur(0);
         // function pour changer photo aside
         function effacePortrait(z){
             $('.photoCharac').eq(z).animate({
                 opacity:"0"
-            },1000);
+            },500);
         }
         function chargePortrait(z){
             $('.photoCharac').eq(z).animate({
                 opacity:"1"
-            },1000);
+            },500);
             index = z;
+        }
+        function chargeCouleur(z){
+            $(('.bw-'+String(z+1))).animate({
+                opacity:"0"
+            },250);
+        }
+        function chargeBw(z){
+            if(z == 0)z=8;
+            $(('.bw-'+String(z))).animate({
+                opacity:"1"
+            },250);
         }
 
 
@@ -26,6 +38,8 @@ $(function () {
 
         effacePortrait(index);
         chargePortrait(newIndex);
+        chargeBw(index);
+        chargeCouleur(newIndex);
 
 
     });
