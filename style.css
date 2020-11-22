@@ -124,6 +124,13 @@ h1{
 #name{
     
     flex-basis: 10%;
+    color: #ed2024;
+    text-shadow: black -3px 3px 0px;
+    font-size: 3em;
+    align-self: center;
+
+
+
 }
 #characGrid
 {
@@ -244,5 +251,33 @@ h1{
     flex-grow: 1;
     flex-basis: 30vh;
 }
-
-
+#history{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.progress{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(236, 234, 234);
+    height: 1.5rem;
+}
+.progress-bar{
+    width: 100%;
+    background-color: #d66478;
+    height: 1.5rem;
+    border-radius: 10px;
+    margin: 0;
+    
+}
+#strength{
+    width: 100%
+}
+#speed{
+    width: 60%
+}
+#resistance{
+    width: 60%
+}
+#combo{
+    width: 100%
+}
